@@ -1,8 +1,13 @@
+@import url();
 
 body {
   max-width: 1000px;
   padding: 1em;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+nav li {
+
 }
 
 div, section, main, aside, header, footer {

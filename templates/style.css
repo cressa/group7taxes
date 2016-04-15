@@ -1,17 +1,100 @@
-@import url();
 
-body {
-  max-width: 1000px;
-  padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+header{
+  padding-top:3em;
 }
 
-nav li {
-
+img {
+  float: left;
+  width: 175px;
+  padding-right: 2em;
+  padding-left: 1.5em;
+  margin-top: -1.7em;
 }
 
-div, section, main, aside, header, footer {
-  border: 1px solid lightgray;
-  padding: .5em;
-  margin-bottom: 1em;
+
+h1.companyname {
+  background-color: rgb(146,115,80);
+  font-family:freight micro pro, serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: white;
+  text-align: left;
+  padding-top: .5em;
+}
+
+h1.associates {
+  background-color: rgb(146,115,80);
+  font-family: optima, sans-serif;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(103,39,31);
+  text-align: left;
+  line-height: .1;
+}
+
+div {
+  height: 100px;
+  min-width: 750px;
+  margin-top: 2.5em;
+  background-color: rgb(146,115,80);
+}
+
+h1{
+font-size: 3em;
+font-family: optima, sans-serif;
+font-weight: bold;
+color: rgb(103,39,31);
+text-align: left;
+}
+
+h2{
+  font-family: optima, sans-serif;
+  font-weight: bold;
+  color: rgb(57,85,93);
+}
+
+h3{
+  font-family: cambria, serif;
+  font-weight: italic;
+  color: rgb(57,85,93);
+}
+
+nav {
+  font-family: optima, sans-serif;
+  font-family: bold;
+  color: white;
+}
+
+div {
+  font-family: optima, sans-serif;
+}
+
+p {
+  font-family: cambria, serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-family: cambria, serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+float: left;
+width: 33.3%;
+padding-top: 1em;
+padding-bottom: 2em;
+}
+
+footer {
+  background-color:rgb(103,39,31);
+  text-align: center;
+
 }
