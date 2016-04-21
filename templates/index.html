@@ -9,34 +9,39 @@
   </head>
   <body>
       <header>
-        <a href="index.html"><img src="williamthomas.png" alt="William Thomas &amp; Associates Logo"/></a>
-      <div>
+        <a href="#menu" class="menu-link">
+            <div class="menu-link__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link__label"></div>
+        </a>
+          <nav id="menu" role="navigation">
+          <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="askourteam.html">Ask Our Team</a></li>
+          <li><a href=".html">About Us</a></li>
+          <li><a href=".html">News &amp; Events</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="scheduleanappointment.html">Schedule an Appointment</a></li>
+          <form action="search.php">Search:
+            <input type="search" name="Search"/>
+            <input type="submit"
+              value="Search"/>
+
+
+  </ul>
+  </form>
+        </nav>
+      <a href="index.html"><img src="williamthomas.svg" alt="William Thomas &amp; Associates Logo"/></a>
+      <div class="headerbackground">
       <h1 class= "companyname">William Thomas</h1>
       <h1 class= "associates">&amp; Associates</h1>
     </div>
     </header>
-    <!--
-      <nav>
-      <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="askourteam.html">Ask Our Team</a></li>
-      <li><a href=".html">About Us</a></li>
-      <li><a href=".html">News &amp; Events</a></li>
-      <form action="search.php">Search:
-        <input type="search" name="Search"/>
-        <input type="submit"
-          value="Search"/>
-      </form>
-      </ul>
-    </nav>
-
-        <ul>
-        <li><a href="signin.html">Sign In</a></li>
-        <li><a href="scheduleanappointment.html">Schedule an Appointment</a></li>
-      </ul>
-
-      -->
-
+</br>
+</br>
       <main>
         <h1> Who We Are</h1>
         <p>William Thomas &amp; Associates is a full-service accounting firm
@@ -96,6 +101,10 @@
           </ul>
         </footer>
 
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+      <!-- Add your stylesheet here, before the closing HTML tag -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="index.js"></script>
+
   </body>
 </html>
