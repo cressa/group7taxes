@@ -49,7 +49,7 @@ div.headerbackground {
 }
 
 h1{
-font-size: 3em;
+font-size: 2.5em;
 font-family: optima, sans-serif;
 font-weight: bold;
 color: rgb(103,39,31);
@@ -57,15 +57,25 @@ text-align: left;
 }
 
 h2{
-  font-family: optima, sans-serif;
+  font-size: 1.6em;
+  font-family: cambria, serif;
   font-weight: bold;
   color: rgb(57,85,93);
 }
 
 h3{
+  font-size: 1.3em;
   font-family: cambria, serif;
-  font-weight: italic;
+  font-weight: lighter;
+  font-style: italic;
   color: rgb(57,85,93);
+}
+
+h4 {
+  color: rgb(103,39,31);
+  font-family: cambria, serif;
+  font-weight: lighter;
+  font-size: 1em;
 }
 
 nav {
@@ -89,6 +99,66 @@ body{
 }
 p {
   font-family: cambria, serif;
+  font-size: 1em;
+}
+
+.extraservices {
+  visibility: hidden;
+  font-size: 1em;
+}
+
+.servicesextratext {
+  visibility: hidden;
+}
+
+.categoryheadings {
+  visibility: hidden;
+}
+
+HTML  CSS   Result
+Edit
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion {
+    margin:0 auto;
+    padding:0;
+    width: 90%
+}
+
+.accordion li {
+    list-style:none;
+    width:100%;
+    }
+
+.accordion li label {
+    padding:10px;
+    display:block;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    }
+
+/* Hide the radio buttons */
+.accordion label + input[type='radio'] {
+    display: none;
+}
+
+/* hide content by default */
+.accordion .content {
+  max-height: 0;
+    overflow: hidden;
+    display: block;
+    transition: none;
+}
+
+.accordion label + input[type='radio']:checked + .content {
+    max-height: 50em;
+    padding:.5em;
+    overflow: visible;
+    transition: .7s max-height ease;
 }
 
 ul {
@@ -97,7 +167,6 @@ ul {
 
 footer a {
   font-family: cambria, serif;
-  font-weight: bold;
   color: white;
   text-decoration: none;
 
@@ -128,6 +197,7 @@ a.menu-link {
             padding: 1em;
             width: 125px;
             position: relative;
+            z-index: 100;
         }
 
 .menu-link__hamburger {
@@ -196,8 +266,11 @@ nav[role=navigation] {
             transition: all 0.3s ease-out;
         }
         .js nav[role=navigation] {
-            overflow: hidden;;
+            overflow: hidden;
             max-height: 0;
+            position: absolute;
+            width: 100%;
+            top:188px;
         }
         nav[role=navigation].active {
             max-height: 20em;
@@ -234,3 +307,24 @@ nav[role=navigation] {
                 border: 0;
             }
         }
+
+  /* Content Text */
+
+        .button {
+          padding: 1em;
+          display: inline-block;
+          background-color: rgb(57,85,93);
+          color: white;
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif;
+          transition: .3s background-color ease-in-out;
+          width: 30%;
+          margin: .5em;
+          text-align: center;
+          font-family: optima, sans-serif;
+          font-weight: bold;
+        }
+
+      .buttontext {
+        display: none;
+      }

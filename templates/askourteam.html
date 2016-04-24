@@ -7,30 +7,41 @@
     <title>Home Page Wireframe</title>
     <meta name="description" content="Page Description Goes Here">
   </head>
-  <header>
-    <a href="index.html"><img src="williamthomas.png" alt="William Thomas &amp; Associates Logo"/></a>
-      <h1 class="companyname">William Thomas</h1>
-      <h1 class="associates">&amp; Associates</h1>
-  </header>    
-      <nav>
-      <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="askourteam.html">Ask Our Team</a></li>
-      <li><a href=".html">About Us</a></li>
-      <li><a href=".html">News &amp; Events</a></li>
-      <form action="search.php">Search:
-        <input type="search" name="Search"/>
-        <input type="submit"
-          value="Search"/>
-      </form>
-      </ul>
-    </nav>
-      <div>
-        <ul>
-        <li><a href="signin.html">Sign In</a></li>
-        <li><a href="scheduleanappointment.html">Schedule an Appointment</a></li>
-        </ul>
-      </div>
+  <body>
+      <header>
+        <a href="#menu" class="menu-link">
+            <div class="menu-link__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link__label"></div>
+        </a>
+          <nav id="menu" role="navigation">
+          <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="askourteam.html">Ask Our Team</a></li>
+          <li><a href=".html">About Us</a></li>
+          <li><a href=".html">News &amp; Events</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="scheduleanappointment.html">Schedule an Appointment</a></li>
+          <form action="search.php">Search:
+            <input type="search" name="Search"/>
+            <input type="submit"
+              value="Search"/>
+
+
+  </ul>
+  </form>
+        </nav>
+      <a href="index.html"><img src="williamthomas.svg" alt="William Thomas &amp; Associates Logo"/></a>
+      <div class="headerbackground">
+      <h1 class= "companyname">William Thomas</h1>
+      <h1 class= "associates">&amp; Associates</h1>
+    </div>
+    </header>
+<br>
+<br>
 
     <main>
       <h1>Our Team</h1>
@@ -177,17 +188,31 @@
 
     </main>
 
-    <footer>
-      <ul>
-      <li><a href=".html">Careers</a></li>
-      <li><a href=".html">Site Map</a></li>
-      <li><a href=".html">Locations</a></li>
-      <li><a href=".html">Terms</a></li>
-      <li><a href=".html">Privacy Notice</a></li>
-      <li><a href=".html">IRS Informaiton</a></li>
-      </ul>
-    </footer>
+  </section>
+  </main>
 
-  <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+
+
+  <footer>
+    <ul>
+  <div class= "links">
+    <li><a href=".html">Careers</a></li>
+    <li><a href=".html">Site Map</a></li>
+  </div>
+  <div class= "links">
+    <li><a href=".html">Locations</a></li>
+    <li><a href=".html">Terms</a></li>
+  </div>
+  <div class= "links">
+    <li><a href=".html">Privacy Notice</a></li>
+    <li><a href=".html">IRS Informaiton</a></li>
+  </div>
+    </ul>
+  </footer>
+
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <!-- Add your stylesheet here, before the closing HTML tag -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="index.js"></script>
 </body>
 </html>
