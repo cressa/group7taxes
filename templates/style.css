@@ -114,13 +114,7 @@ p {
 .categoryheadings {
   visibility: hidden;
 }
-
-HTML  CSS   Result
-Edit
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* accordion style */
 .accordion {
     margin:0 auto;
     padding:0;
@@ -132,14 +126,14 @@ body {
     width:100%;
     }
 
-.accordion li label {
-    padding:10px;
-    display:block;
-    background-color:black;
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    }
+  .accordion li label {
+        padding:10px;
+        display:block;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+        }
 
 /* Hide the radio buttons */
 .accordion label + input[type='radio'] {
@@ -199,6 +193,7 @@ a.menu-link {
             width: 125px;
             position: relative;
             z-index: 100;
+
         }
 
 .menu-link__hamburger {
@@ -310,7 +305,9 @@ nav[role=navigation] {
         }
 
   /* Content Text */
-
+div.buttons{
+  text-align:center;
+}
         .button {
           padding: 1em;
           display: inline-block;
