@@ -1,0 +1,163 @@
+h4{
+  font-family: optima, sans-serif;
+  text-transform: uppercase;
+  padding-top: 1em;
+  padding-left: .4em;
+  margin-bottom: 0em;
+  font-size: 3em;
+  color: rgb(103,39,31);
+}
+.introsentence{
+  padding-top: 0em;
+  font-family: cambria, serif;
+  font-size: 1em;
+
+}
+header{
+  padding-top:3em;
+}
+
+img {
+  float: left;
+  width: 200px;
+  padding-right: 1em;
+  padding-left: 0em;
+  margin-top: -1.7em;
+
+}
+h2.companyname {
+  background-color: rgb(146,115,80);
+  font-family:freight micro pro, serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: white;
+  text-align: left;
+  padding-top: .5em;
+  padding-left: 5em;
+  letter-spacing: 0.03em;
+
+
+
+}
+
+h2.associates {
+  background-color: rgb(146,115,80);
+  font-family: optima, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(103,39,31);
+  text-align: left;
+  line-height: .1;
+}
+
+div.headerbackground {
+  height: 100px;
+  min-width: 100px;
+  margin: 0;
+  margin-top: 2.5em;
+  background-color: rgb(146,115,80);
+}
+h2{
+  font-family: optima, sans-serif;
+  text-transform: uppercase;
+  color: rgb(103,39,31);
+  padding-left: 1em;
+
+}
+.colors{
+  box-sizing: border-box;
+  padding-left: 1.4em;
+}
+.bluebox{
+  background-color:rgb(57,85,93);
+  height:100px;
+  width:100px;
+  display:inline-block;
+}
+
+.brownbox{
+  background-color:rgb(103,39,31);
+  height:100px;
+  width:100px;
+  margin-left:8em;
+  display: inline-block;
+}
+
+.tanbox{
+  background-color:rgb(146,115,80);
+  height:100px;
+  width:100px;
+  margin-left:8em;
+}
+
+li.cambria{
+  font-family: cambria, serif;
+  font-size:1em;
+}
+
+li.cambriaitalic{
+  font-family: cambria, serif;
+  font-style: italic;
+  font-size:1em;
+}
+li.optima{
+  font-family: optima, sans-serif;
+  font-size:1em;
+  }
+
+  li.optimabold{
+    font-family: optima, sans-serif;
+    font-weight: bold;
+    font-size:1em;
+  }
+
+  footer a {
+    font-family: cambria, serif;
+    color: white;
+    text-decoration: none;
+
+  }
+  footer ul{
+    padding: 0;
+    margin: 0;
+    display: hidden;
+  }
+
+  div.links {
+  float: left;
+  width: 33.3%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background-color: rgb(103,39,31);
+  color: rgb(103,39,31);
+
+
+  }
+  footer {
+    background-color:rgb(103,39,31);
+    text-align: center;
+
+  }
+  p{
+    padding-left: 1.4em;
+  }
+
+
+
+
+.button {
+  padding: 1em;
+  display: inline-block;
+  background-color: rgb(57,85,93);
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: .3s background-color ease-in-out;
+  width: 30%;
+  margin: 1.4em;
+  text-align: center;
+  font-family: optima, sans-serif;
+  font-weight: bold;
+}
