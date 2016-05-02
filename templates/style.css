@@ -80,13 +80,20 @@ h4 {
 
 nav {
   font-family: optima, sans-serif;
-  font-family: bold;
+  font-weight: bold;
   color: white;
   text-align: right;
 }
+
 a{
   color: white;
+    text-decoration: none;
 }
+
+a:hover {
+  color: rgb(146,115,80);
+}
+
 form{
   padding-left: .8em;
 }
@@ -197,6 +204,7 @@ background-color: rgb(103,39,31);
 footer {
   background-color:rgb(103,39,31);
   text-align: center;
+  margin-top: 2em;
 
 }
 /* Adds Code for Pure CSS Hamburger Button */
@@ -211,7 +219,7 @@ a.menu-link {
         }
 
 .menu-link__hamburger {
-    margin: 0 auto;
+    margin: -10px auto;
     text-align: center;
     width: 33px;
     float: right;
