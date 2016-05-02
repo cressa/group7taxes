@@ -126,6 +126,7 @@ p {
     width:100%;
     }
 
+<<<<<<< Updated upstream
   .accordion li label {
         padding:10px;
         display:block;
@@ -134,6 +135,16 @@ p {
         cursor: pointer;
         border: 1px solid white;
         }
+=======
+.accordion li label {
+    padding:10px;
+    display:block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    }
+>>>>>>> Stashed changes
 
 /* Hide the radio buttons */
 .accordion label + input[type='radio'] {
