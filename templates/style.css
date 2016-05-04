@@ -1,6 +1,6 @@
 
 header{
-  padding-top:3em;
+  padding-top:2em;
 }
 
 img {
@@ -10,40 +10,44 @@ img {
   padding-left: 0em;
   margin-top: -1.7em;
   position: relative;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/gh-pages
 }
 
 
 h1.companyname {
-  background-color: rgb(146,115,80);
   font-family:freight micro pro, serif;
   font-size: 1.6em;
   text-transform: uppercase;
   font-weight:bold;
   color: white;
   text-align: left;
-  padding-top: .5em;
+  padding-top: .4em;
   padding-left: 5em;
-  letter-spacing: 0.03em;
-
-
-
+  letter-spacing: 0.04em;
 }
 
 h1.associates {
-  background-color: rgb(146,115,80);
   font-family: optima, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(103,39,31);
   text-align: left;
+<<<<<<< HEAD
   line-height: .1;
 
+=======
+  line-height: .2em;
+  padding-bottom: 1em;
+  margin-top: -0.7em;
+>>>>>>> origin/gh-pages
 }
 
 div.headerbackground {
-  height: 100px;
+  height: 101px;
   min-width: 100px;
   margin: 0;
   margin-top: 2.5em;
@@ -56,7 +60,11 @@ font-family: optima, sans-serif;
 font-weight: bold;
 color: rgb(103,39,31);
 text-align: left;
+<<<<<<< HEAD
 padding-top: .5em;
+=======
+padding-top:.5em;
+>>>>>>> origin/gh-pages
 }
 
 h2{
@@ -83,20 +91,36 @@ h4 {
 
 nav {
   font-family: optima, sans-serif;
-  font-family: bold;
+  font-size: 0.9em;
+  font-weight: bold;
   color: white;
+<<<<<<< HEAD
   text-align: left;
 
+=======
+  text-align: center;
+  margin-top: .3em;
+>>>>>>> origin/gh-pages
 }
+
 a{
   color: white;
+<<<<<<< HEAD
   font-family: optima, sans-serif;
 
-}
-form{
-  padding-left: .8em;
+=======
+    text-decoration: none;
 }
 
+a:hover {
+  color: rgb(198,168,140);
+>>>>>>> origin/gh-pages
+}
+
+form{
+  padding-left: .8em;
+  padding-bottom: .9em;
+}
 
 main{
   padding-left: 1em;
@@ -180,6 +204,7 @@ footer a {
   font-family: cambria, serif;
   color: white;
   text-decoration: none;
+  line-height: 1.5em;
 
 }
 footer ul{
@@ -199,10 +224,16 @@ background-color: rgb(103,39,31);
 footer {
   background-color:rgb(103,39,31);
   text-align: center;
+<<<<<<< HEAD
 margin-left: -2em;
 margin-right: -1em;
   margin-top: 2em;
   min-width: 100px;
+=======
+  margin-top: 2em;
+  margin-left: -2em;
+  margin-right: -0.1em;
+>>>>>>> origin/gh-pages
 
 
 }
@@ -301,29 +332,16 @@ nav[role=navigation] {
         nav[role=navigation] li a {
             display: block;
             padding: 0.8em;
+<<<<<<< HEAD
             border-bottom: 1px solid white;
         }
+=======
+            border-bottom: 1px solid rgb(198,168,140);
+>>>>>>> origin/gh-pages
 
-        @media screen and (min-width:800px) {
-            a.menu-link {
-               display: none;
-            }
-            .js nav[role=navigation] {
-                max-height: none;
-            }
-            nav[role=navigation] ul {
-                margin: 0 0 0 -0.25em;
-                border: 0;
-            }
-
-            nav[role=navigation]  li {
-                display: inline-block;
-                margin: 0 0.25em;
-            }
-            nav[role=navigation] li a {
-                border: 0;
-            }
         }
+
+
 
   /* Content Text */
 div.buttons{
@@ -346,6 +364,7 @@ div.buttons{
           -webkit-border-radius: 10px;
           max-width: 200px;
           border: 5px solid rgb(57,85,93);
+          margin-right: 3em;
         }
 
     .button:hover, .button:focus {
@@ -355,3 +374,89 @@ div.buttons{
       .buttontext {
         display: none;
       }
+
+
+
+
+/*Media Queries*/
+
+
+@media screen and (min-width: 800px) {
+    a.menu-link {
+       display: none;
+    }
+    .js nav[role=navigation] {
+        max-height: none;
+    }
+    nav[role=navigation] ul {
+        margin: 0 0 0 -0.25em;
+        border: 0;
+        background-color: rgb(146,115,80);
+    }
+
+    nav[role=navigation]  li {
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+    nav[role=navigation] li a {
+        border: 0;
+    }
+
+    nav {
+      text-align: right;
+      margin-top: -2em;
+    }
+
+    .signinbutton {
+      padding: 1em;
+      display: inline-block;
+      background-color: rgb(57,85,93);
+      color: white;
+      text-decoration: none;
+      transition: .3s background color ease-in-out;
+      width: 30%;
+      text-align: center;
+      font-family: optima, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      max-width: 180px;
+      max-height: 10px;
+      border: 5px solid rgb(57,85,93);
+    }
+
+    .schedulebutton {
+      padding: 1em;
+      display: inline-block;
+      background-color: rgb(57,85,93);
+      color: white;
+      text-decoration: none;
+      transition: .3s background color ease-in-out;
+      width: 30%;
+      text-align: center;
+      font-family: optima, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      max-width: 180px;
+      max-height: 10px;
+      border: 5px solid rgb(57,85,93);
+      float: right;
+    }
+
+    div.headerbackground {
+      background-color: white;
+    }
+
+    h1.companyname {
+        color: rgb(103,39,31)}
+
+    h1.associates {
+      color: rgb(146,115,80)}
+    }
+
+
+
+    }
