@@ -330,7 +330,7 @@ nav[role=navigation] {
             top:188px;
         }
         nav[role=navigation].active {
-            max-height: 20em;
+            max-height: 30em;
         }
         nav[role=navigation] ul {
             margin: 0;
