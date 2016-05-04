@@ -10,6 +10,10 @@ img {
   padding-left: 0em;
   margin-top: -1.7em;
   position: relative;
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/gh-pages
 }
 
 
@@ -32,9 +36,14 @@ h1.associates {
   font-weight: bold;
   color: rgb(103,39,31);
   text-align: left;
+<<<<<<< HEAD
+  line-height: .1;
+
+=======
   line-height: .2em;
   padding-bottom: 1em;
   margin-top: -0.7em;
+>>>>>>> origin/gh-pages
 }
 
 div.headerbackground {
@@ -51,7 +60,11 @@ font-family: optima, sans-serif;
 font-weight: bold;
 color: rgb(103,39,31);
 text-align: left;
+<<<<<<< HEAD
+padding-top: .5em;
+=======
 padding-top:.5em;
+>>>>>>> origin/gh-pages
 }
 
 h2{
@@ -81,17 +94,27 @@ nav {
   font-size: 0.9em;
   font-weight: bold;
   color: white;
+<<<<<<< HEAD
+  text-align: left;
+
+=======
   text-align: center;
   margin-top: .3em;
+>>>>>>> origin/gh-pages
 }
 
 a{
   color: white;
+<<<<<<< HEAD
+  font-family: optima, sans-serif;
+
+=======
     text-decoration: none;
 }
 
 a:hover {
   color: rgb(198,168,140);
+>>>>>>> origin/gh-pages
 }
 
 form{
@@ -112,6 +135,7 @@ p {
 
 .mobilebuttons {
   text-align: center;
+
 }
 .extraservices {
   visibility: hidden;
@@ -146,13 +170,21 @@ p {
 }
 
 .accordion {
+<<<<<<< HEAD
     padding:-1em;
     width: 90%
+=======
+    margin:0 auto;
+    padding:0;
+    width: 100%
+    padding-left: -1em;
+>>>>>>> origin/gh-pages
 }
 
 .accordion li {
     list-style:none;
     width:100%;
+<<<<<<< HEAD
         padding:-1em;
     }
 
@@ -168,6 +200,22 @@ p {
     border: 1px solid white;
     width: 100%;
     }
+=======
+
+    }
+
+
+  .accordion li label {
+        padding:10px;
+        display:block;
+        background-color: maroon
+        ;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+        }
+
+>>>>>>> origin/gh-pages
 
 /* Hide the radio buttons */
 .accordion label + input[type='radio'] {
@@ -218,10 +266,20 @@ background-color: rgb(103,39,31);
 footer {
   background-color:rgb(103,39,31);
   text-align: center;
+<<<<<<< HEAD
+margin-left: -2em;
+margin-right: -1em;
+  margin-top: 2em;
+  min-width: 100px;
+=======
   margin-top: 2em;
   margin-left: -2em;
   margin-right: -0.1em;
+<<<<<<< HEAD
 }
+=======
+>>>>>>> origin/gh-pages
+>>>>>>> origin/gh-pages
 
 
 /* Adds Code for Pure CSS Hamburger Button */
@@ -256,7 +314,7 @@ a.menu-link span {
   position: relative;
   background: rgb(103,39,31);
   border-radius: 3px; /* Adjust the rounding of the hamburger here */
-  z-index: 1;
+  z-index: 0;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -319,7 +377,12 @@ nav[role=navigation] {
         nav[role=navigation] li a {
             display: block;
             padding: 0.8em;
+<<<<<<< HEAD
+            border-bottom: 1px solid white;
+        }
+=======
             border-bottom: 1px solid rgb(198,168,140);
+>>>>>>> origin/gh-pages
 
         }
 
