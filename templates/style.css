@@ -125,35 +125,48 @@ p {
 .categoryheadings {
   visibility: hidden;
 }
+
+
+
 /* accordion style */
+
+.learnmore {
+  color: rgb(57,85,93);
+  padding-left: 1.5em;
+  font-style: italic;
+  font-family: optima, sans-serif;
+}
+
+.categoryheadings {
+  display: none;
+}
+
+.categoryextra {
+  display: none;
+}
+
 .accordion {
-    margin:0 auto;
-    padding:0;
+    padding:-1em;
     width: 90%
 }
 
 .accordion li {
     list-style:none;
     width:100%;
+        padding:-1em;
     }
 
-
-  .accordion li label {
-        padding:10px;
-        display:block;
-        background-color: red;
-        color: white;
-        cursor: pointer;
-        border: 1px solid white;
-        }
 
 .accordion li label {
     padding:10px;
     display:block;
-    background-color: black;
+    background-color: rgb(103,39,31);
     color: white;
+    text-align: center;
+    font-family: cambria, serif;
     cursor: pointer;
     border: 1px solid white;
+    width: 100%;
     }
 
 /* Hide the radio buttons */
@@ -208,9 +221,9 @@ footer {
   margin-top: 2em;
   margin-left: -2em;
   margin-right: -0.1em;
-
-
 }
+
+
 /* Adds Code for Pure CSS Hamburger Button */
 a.menu-link {
         float: right;
