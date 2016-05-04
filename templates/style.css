@@ -9,6 +9,7 @@ img {
   padding-right: 1em;
   padding-left: 0em;
   margin-top: -1.7em;
+  position: relative;
 
 }
 
@@ -38,6 +39,7 @@ h1.associates {
   color: rgb(103,39,31);
   text-align: left;
   line-height: .1;
+
 }
 
 div.headerbackground {
@@ -54,6 +56,7 @@ font-family: optima, sans-serif;
 font-weight: bold;
 color: rgb(103,39,31);
 text-align: left;
+padding-top: .5em;
 }
 
 h2{
@@ -82,10 +85,13 @@ nav {
   font-family: optima, sans-serif;
   font-family: bold;
   color: white;
-  text-align: right;
+  text-align: left;
+
 }
 a{
   color: white;
+  font-family: optima, sans-serif;
+
 }
 form{
   padding-left: .8em;
@@ -105,6 +111,7 @@ p {
 
 .mobilebuttons {
   text-align: center;
+
 }
 .extraservices {
   visibility: hidden;
@@ -122,32 +129,27 @@ p {
 .accordion {
     margin:0 auto;
     padding:0;
-    width: 90%
+    width: 100%
+    padding-left: -1em;
 }
 
 .accordion li {
     list-style:none;
     width:100%;
+
     }
 
 
   .accordion li label {
         padding:10px;
         display:block;
-        background-color: red;
+        background-color: maroon
+        ;
         color: white;
         cursor: pointer;
         border: 1px solid white;
         }
 
-.accordion li label {
-    padding:10px;
-    display:block;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    }
 
 /* Hide the radio buttons */
 .accordion label + input[type='radio'] {
@@ -197,6 +199,11 @@ background-color: rgb(103,39,31);
 footer {
   background-color:rgb(103,39,31);
   text-align: center;
+margin-left: -2em;
+margin-right: -1em;
+  margin-top: 2em;
+  min-width: 100px;
+
 
 }
 /* Adds Code for Pure CSS Hamburger Button */
@@ -211,7 +218,7 @@ a.menu-link {
         }
 
 .menu-link__hamburger {
-    margin: 0 auto;
+    margin: -10px auto;
     text-align: center;
     width: 33px;
     float: right;
@@ -231,7 +238,7 @@ a.menu-link span {
   position: relative;
   background: rgb(103,39,31);
   border-radius: 3px; /* Adjust the rounding of the hamburger here */
-  z-index: 1;
+  z-index: 0;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -253,7 +260,7 @@ a.menu-link span:nth-child(3) {
 
 .menu-link.active span {
   opacity: 1;
-    background: black;
+    background: rgb(103,39,31);
   transform: rotate(45deg) translate(-2px, -1px);
 }
 
@@ -294,7 +301,7 @@ nav[role=navigation] {
         nav[role=navigation] li a {
             display: block;
             padding: 0.8em;
-            border-bottom: 1px solid rgb(103,39,31);
+            border-bottom: 1px solid white;
         }
 
         @media screen and (min-width:800px) {
