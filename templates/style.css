@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 header{
   padding-top:2em;
 }
@@ -16,6 +20,13 @@ img.employees {
   text-align: center;
 }
 
+.signinbutton {
+  display: none;
+}
+
+.schedulebutton {
+  display: none;
+}
 
 h1.companyname {
   font-family:freight micro pro, serif;
@@ -79,7 +90,7 @@ h2{
   text-align: center;
 }
 
-img.employeephoto {
+.employeephoto {
   border: 3px solid rgb(57,85,93);
   padding-right: 0em;
   float: none;
@@ -176,17 +187,15 @@ p {
 
 .accordion {
     padding:-1em;
-    width: 90%
     margin:0 auto;
     padding:0;
-    width: 100%
-    padding-left: -1em;
+    width: 105%;
+    margin-left: -4.9%;
 }
 
 .accordion li {
     list-style:none;
     width:100%;
-    padding:-1em;
     }
 
 
@@ -214,7 +223,7 @@ p {
         }
 
 /* Hide the radio buttons */
-.accordion label + input[type='radio'] {
+.accordion label + input[type='checkbox'] {
     display: none;
 }
 
@@ -226,7 +235,7 @@ p {
     transition: none;
 }
 
-.accordion label + input[type='radio']:checked + .content {
+.accordion label + input[type='checkbox']:checked + .content {
     max-height: 50em;
     padding:.5em;
     overflow: visible;
@@ -255,20 +264,15 @@ float: left;
 width: 33.3%;
 padding-top: 1em;
 padding-bottom: 2em;
-background-color: rgb(103,39,31);
 
 }
 
 footer {
   background-color:rgb(103,39,31);
   text-align: center;
-margin-left: -2em;
-margin-right: -1em;
   margin-top: 2em;
-  min-width: 100px;
-  margin-top: 2em;
-  margin-left: -2em;
-  margin-right: -0.1em;
+  float: left;
+  width: 100%;
 }
 
 
@@ -379,12 +383,11 @@ div.buttons{
 }
         .button {
           padding: 1em;
-          display: inline-block;
+          display: block;
           background-color: rgb(57,85,93);
           color: white;
           text-decoration: none;
-          transition: .3s background color ease-in-out;
-          width: 30%;
+          transition: .3s all ease-in-out;
           margin: .5em;
           text-align: center;
           font-family: optima, sans-serif;
@@ -394,7 +397,8 @@ div.buttons{
           -webkit-border-radius: 10px;
           max-width: 200px;
           border: 5px solid rgb(57,85,93);
-          margin-right: 3em;
+          margin-right: auto;
+          margin-left: auto;
         }
 
     .button:hover, .button:focus {
@@ -417,11 +421,13 @@ div.buttons{
     }
     .js nav[role=navigation] {
         max-height: none;
+        top: 140px;
     }
     nav[role=navigation] ul {
         margin: 0 0 0 -0.25em;
         border: 0;
         background-color: rgb(146,115,80);
+
     }
 
     nav[role=navigation]  li {
@@ -434,45 +440,60 @@ div.buttons{
 
     nav {
       text-align: right;
-      margin-top: -2em;
+    }
+
+    nav[role=navigation] .signindrop {
+      display: none;
+    }
+
+    nav[role=navigation] .scheduledrop {
+      display: none;
+    }
+
+    .navbuttons{
+      float: right;
+      max-width: 30%;
     }
 
     .signinbutton {
-      padding: 1em;
-      display: inline-block;
+      padding: 0.5em;
+      display: block;
       background-color: rgb(57,85,93);
       color: white;
       text-decoration: none;
       transition: .3s background color ease-in-out;
-      width: 30%;
+      margin: .5em;
       text-align: center;
       font-family: optima, sans-serif;
       font-weight: bold;
       border-radius: 10px;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
-      max-width: 180px;
-      max-height: 10px;
+      max-width: 200px;
       border: 5px solid rgb(57,85,93);
+      margin-right: 3em;
     }
 
     .schedulebutton {
-      padding: 1em;
-      display: inline-block;
+      padding: 0.5em;
+      display: block;
       background-color: rgb(57,85,93);
       color: white;
       text-decoration: none;
       transition: .3s background color ease-in-out;
-      width: 30%;
+      margin: .5em;
       text-align: center;
       font-family: optima, sans-serif;
       font-weight: bold;
       border-radius: 10px;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
-      max-width: 180px;
-      max-height: 10px;
+      max-width: 200px;
       border: 5px solid rgb(57,85,93);
+      margin-right: 3em;
+    }
+
+    form {
       float: right;
     }
 
@@ -482,13 +503,13 @@ div.buttons{
 
     h1.companyname {
         color: rgb(103,39,31);
-}
-
-    h1.associates {
-      color: rgb(146,115,80)}
     }
 
-/* Employee Page
+    h1.associates {
+      color: rgb(146,115,80);
+    }
+
+
     img.employeephoto {
 
     }
@@ -506,6 +527,20 @@ div.buttons{
 
     .employeenumber {
       text-align: left;
-    } */
+    }
 
     }
+
+    .clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
