@@ -12,6 +12,10 @@ img {
   position: relative;
 }
 
+img.employees {
+  text-align: center;
+}
+
 
 h1.companyname {
   font-family:freight micro pro, serif;
@@ -55,14 +59,36 @@ padding-top: .5em;
 }
 
 h2{
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: cambria, serif;
   font-weight: bold;
   color: rgb(57,85,93);
 }
 
+.employeename {
+  text-align: center;
+  line-height: 0.7em;
+}
+
+.employeetitle {
+  text-align: center;
+    line-height: 0.3em;
+}
+
+.employeenumber {
+  text-align: center;
+}
+
+img.employeephoto {
+  border: 3px solid rgb(57,85,93);
+  padding-right: 0em;
+  float: none;
+  display: block;
+  margin: 0px auto;
+}
+
 h3{
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: cambria, serif;
   font-weight: lighter;
   font-style: italic;
@@ -75,6 +101,7 @@ h4 {
   font-weight: lighter;
   font-size: 1em;
 }
+
 
 nav {
   font-family: optima, sans-serif;
@@ -180,8 +207,7 @@ p {
   .accordion li label {
         padding:10px;
         display:block;
-        background-color: maroon
-        ;
+        background-color: rgb(103,39,31);
         color: white;
         cursor: pointer;
         border: 1px solid white;
@@ -455,12 +481,31 @@ div.buttons{
     }
 
     h1.companyname {
-        color: rgb(103,39,31)}
+        color: rgb(103,39,31);
+}
 
     h1.associates {
       color: rgb(146,115,80)}
     }
 
+/* Employee Page
+    img.employeephoto {
 
+    }
+
+    .employeename {
+      text-align: left;
+      line-height: 0.7em;
+      margin-top: 2.5em;
+    }
+
+    .employeetitle {
+      text-align: left;
+        line-height: 0.3em;
+    }
+
+    .employeenumber {
+      text-align: left;
+    } */
 
     }
