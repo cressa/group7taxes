@@ -53,7 +53,7 @@ h1.associates {
 }
 
 div.headerbackground {
-  height: 101px;
+  height: 103px;
   min-width: 100px;
   margin: 0;
   margin-top: 2.5em;
@@ -70,11 +70,12 @@ padding-top: .5em;
 }
 
 h2{
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-family: cambria, serif;
   font-weight: bold;
   color: rgb(57,85,93);
 }
+
 
 .employeename {
   text-align: center;
@@ -140,6 +141,7 @@ form{
 
 main{
   padding-left: 1em;
+
 }
 body{
   margin: 0;
@@ -153,17 +155,10 @@ p {
   text-align: center;
 
 }
-.extraservices {
-  visibility: hidden;
-  font-size: 1em;
-}
-
-.servicesextratext {
-  visibility: hidden;
-}
-
-.categoryheadings {
-  visibility: hidden;
+.learnmore{
+  color: rgb(57,85,93);
+  font-family: optima, sans-serif;
+  font-style: italic;
 }
 
 
@@ -203,7 +198,9 @@ main {
 
 .tab-panel {
   background: #f0f0f0;
-  padding: 1rem;
+  padding: 1em;
+
+
 
 }
 
@@ -228,6 +225,7 @@ footer a {
 footer ul{
   padding: 0;
   margin: 0;
+
 }
 
 div.links {
@@ -235,7 +233,11 @@ float: left;
 width: 33.3%;
 padding-top: 1em;
 padding-bottom: 2em;
+list-style-type: none;
 
+}
+li{
+  list-style-type: none;
 }
 
 footer {
@@ -386,6 +388,14 @@ div.buttons{
         display: none;
       }
 
+      .subheadextra{
+        display: none;
+      }
+
+      .listextra {
+        display: none;
+      }
+
 
 
 /*Media Queries*/
@@ -510,23 +520,60 @@ div.buttons{
 
     .tab-link {
       display: inline-block;
+      padding: 1rem 4rem;
+
+    }
+    .tab-list {
+      float: left;
+      width: 27%;
+      max-width: 27%;
+
+    }
+    .tab-panel{
+      float: right;
+      width: 73%;
+
     }
 
     .tab-link[data-tab-active]:after {
       content: '';
       display: inline-block;
-      margin: auto;
+      margin-left: 14.2em;
       position: absolute;
-      bottom: -10px;
+      bottom: 18px;
       left: 0;
       right: 0;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-top: 10px solid #036800;
-    }
+      border-top: 10px solid rgb(84,32,26);
+      transform: rotate(-90deg);
+}
+.categoryheadings{
+  display: block;
+  font-size: 1.1em;
+  font-family: cambria, serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: rgb(57,85,93);
+}
 
+.categoryextra{
+  display: block;
+}
+.learnmore{
+  display: none;
+}
+
+.subheadextra{
+  display: block;
+  padding-left: 1em;
+}
+
+.listextra {
+  display: block;
+}
   }
 
 
