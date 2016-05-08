@@ -7,41 +7,47 @@
     <title>Home Page Wireframe</title>
     <meta name="description" content="Page Description Goes Here">
   </head>
-  <body>
-      <header role="banner">
-        <a href="#menu" class="menu-link">
-            <div class="menu-link__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-link__label"></div>
-        </a>
-          <nav id="menu" role="navigation">
-          <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="askourteam.html">Ask Our Team</a></li>
-          <li><a href=".html">About Us</a></li>
-          <li><a href=".html">News &amp; Events</a></li>
-          <li class= "signinbutton"><a href="signin.html">Sign In</a></li>
-          <li class= "schedulebutton"><a href="scheduleanappointment.html">Schedule Appointment</a></li>
-          <form action="search.php">Search:
-            <input type="search" name="Search"/>
-            <input type="submit"
-              value="Search"/>
 
-
-  </ul>
-  </form>
-        </nav>
-      <a href="index.html"><img src="williamthomas.svg" alt="William Thomas &amp; Associates Logo"/></a>
-      <div class="headerbackground">
-      <h1 class= "companyname">William Thomas</h1>
-      <h1 class= "associates">&amp; Associates</h1>
+    <body>
+      <div class= "navbuttons">
+      <li class="signinbutton"><a href="signin.html">Sign In</a></li>
+      <li class="schedulebutton"><a href="scheduleanappointment.html">Schedule Appointment</a></li>
     </div>
-    </header>
-<br>
-<br>
+
+        <header role="banner">
+          <a href="#menu" class="menu-link">
+              <div class="menu-link__hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-link__label"></div>
+          </a>
+            <nav id="menu" role="navigation">
+            <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="askourteam.html">Ask Our Team</a></li>
+            <li><a href=".html">About Us</a></li>
+            <li><a href=".html">News &amp; Events</a></li>
+            <li class="signindrop"><a href="signin.html">Sign In</a></li>
+            <li class="scheduledrop"><a href="scheduleanappointment.html">Schedule Appointment</a></li>
+            <form action="search.php">
+              <input type="search" name="Search"/>
+              <input type= "image" src="search.png" width="25" height="25" />
+
+
+    </ul>
+    </form>
+          </nav>
+        <a href="index.html">
+        <img src="williamthomas.svg" alt="William Thomas &amp; Associates Logo"/></a>
+        <div class="headerbackground">
+        <h1 class= "companyname">William Thomas</h1>
+        <h1 class= "associates">&amp; Associates</h1>
+      </div>
+      </header>
+  </br>
+  </br>
     <main role="main">
       <h1>Our Services</h1>
       <p>William Thomas &amp; Associates provides a wide range of services to
@@ -52,63 +58,83 @@
       </p>
 
 
-<ul class="accordion">
-<li>
-<label for="first">Estate Planning</label>
-<input type="checkbox" name="accordion" id="first">
-<div class="content">
-<h3 class="categoryheadings">Estate and Trust Planning and Tax Preparation</h3>
-<p>Effective estate and trust planning can ensure financial security for loved ones. For businesses, it
+      <div class="js-tab-widget">
+          <h2 class="base--h2">Services</h2>
+          <ul class="tab-list">
+            <li class="tab-item">
+              <a class="tab-link" href="#tab-1">Estate Planning</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab-link" href="#tab-2">Investment Planning</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab-link" href="#tab-3">Personal Accounting</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab-link" href="#tab-4">Retirement Planning</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab-link" href="#tab-5">Small Business Accounting</a>
+            </li>
+          </ul>
+          <section id="tab-1" class="tab-panel">
+            <h3 class="categoryheadings">Estate and Trust Planning and Tax Preparation</h3>
+            <p>
+              Effective estate and trust planning can ensure financial security for loved ones. For businesses, it
 can maintain a smooth succession of ownership. Willima Thomas &amp; Associates role is to help you
 navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax
 liability of your beneficiaries.
+<br>
+<br>
 <a class="learnmore" href=".learnmore">Learn More ></a></p>
 <p class="categoryextra">Everyone should have a well-thought-out plan as to how to distribute
 the assets left in one's estate so as to avoid complications and to be sure that the individual’s wishes
 are followed. Having your taxes and estate thoroughly and carefully planned will ensure that your
 loved ones don't have any complications to deal with during a time of loss.</p>
-</div>
-</li>
 
-<li>
-<label for="second">Investment Planning</label>
-<input type="radio" name="accordion" id="second">
-<div class="content">
-<h3 class="categoryheadings">Assurance and Advisory Services</h3>
-<p>At William Thomas &amp; Associates, we focus on building close client relationships that add long-term
+          </section>
+
+          <section id="tab-2" class="tab-panel">
+            <h3 class="categoryheadings">Assurance and Advisory Services</h3>
+
+
+              <p> At William Thomas &amp; Associates, we focus on building close client relationships that add long-term
 value. This includes assuring the solidity of financial records, evaluating financial procedures and
 working to produce strategies that help our clients face the myriad challenges of business planning
 and execution.
-<a class="learnmore" href=".learnmore">Learn More ></a></p>
-<p class="categoryextra">Our clients benefit from objective analysis to assist in controlling costs, increasing
+</p>
+
+
+              <p class="categoryextra">Our clients benefit from objective analysis to assist in controlling costs, increasing
 efficiency, and implementing new technologies and procedures that take advantage of changes in
 the marketplace, accounting standards, and tax law. Our assurance services will improve information
 quality or its context, meaning more success for your business.</p>
-<ul class="categoryheadings">
 <h4>These services include but are not limited to:</h4>
-  <li>General ledger and financial statement preparation</li>
-  <li>Bookkeeping (Monthly, quarterly, or annual)</li>
-  <li>Accounting system setup and support</li>
-  <li>Payroll processing</li>
-  <li>Cash flow budgeting and forecasting</li>
-  <li>Personal financial statements</li>
-  <li>Employee benefit and profit-sharing plans</li>
-  <li>Corporate tax planning and return preparation</li>
-  <li>Litigation support</li>
+  <li>Audits, Reviews, and Compilations</li>
+  <li>Entity Selection and Restructuring</li>
+  <li>Accounting Software Selection, Implementation, and Support</li>
+  <li>Business Evaluations</li>
+  <li>Financial Projections and Forecasts</li>
+  <li>Debt and Finacnces Advising</li>
+  <li>Mergers and Acquisitions</li>
+  <li>Transaction Structuring and Negotiations</li>
+  <li>Business Succession</li>
 </ul>
-</div>
-</li>
+<br>
+<a class="learnmore" href=".learnmore">Learn More ></a>
 
-<li>
-<label for="third">Personal Accounting</label>
-<input type="radio" name="accordion" id="third">
-<div class="content">
-<h3 class="categoryheadings">Debt and Finance Advising</h3>
-<p>Whether your needs are corporate or personal, William Thomas &amp; Associates professionals can assist you in sorting out the different options
+</section>
+          <section id="tab-3" class="tab-panel">
+            <h3 class="categoryheadings">Debt and Finance Advising</h3>
+            <p>
+              Whether your needs are corporate or personal, William Thomas &amp; Associates professionals can assist you in sorting out the different options
         available for debt management and financing that will lower your payments
         and/or reduce the total amount of interest paid.
-<a class="learnmore" href=".learnmore">Learn More ></a></p>
-    <p class="categoryextra">Re-balancing your debts
+        <br>
+        <br>
+        <a class="learnmore" href=".learnmore">Learn More ></a>
+</p>
+              <p class="categoryextra">Re-balancing your debts
     can also result in tax deduction savings. Even if you are able to handle
     the payments and the amounts of your current debts, our expertise may be
     able to save you money and/or lower your payments.</p>
@@ -129,34 +155,42 @@ quality or its context, meaning more success for your business.</p>
         system setup, cost-containment, tax planning, investments, and employee
         benefit and profit-sharing plans.
       </p>
-    </div>
-    </li>
+      <ul class="categoryheadings">
+      <h4>These services include but are not limited to:</h4>
+        <li>General ledger and financial statement preparation</li>
+        <li>Bookkeeping (Monthly, quarterly, or annual)</li>
+        <li>Accounting system setup and support</li>
+        <li>Payroll processing</li>
+        <li>Cash flow budgeting and forecasting</li>
+        <li>Personal financial statements</li>
+        <li>Employee benefit and profit-sharing plans</li>
+        <li>Corporate tax planning and return preparation</li>
+        <li>Litigation support</li>
+      </ul>
 
-    <li>
-    <label for="fourth">Retirement Planning</label>
-    <input type="radio" name="accordion" id="fourth">
-    <div class="content">
-    <h3 class="categoryheadings">Employee Benefits, Pension, and Profit Sharing Plans</h3>
-    <p>Choosing and administering benefit plans for your employees is often a complex process.
+
+          </section>
+          <section id="tab-4" class="tab-panel">
+            <h3 class="categoryheadings">Employee Benefits, Pension, and Profit Sharing Plans</h3>
+            <p>
+              Choosing and administering benefit plans for your employees is often a complex process.
 William Thomas &amp; Associates can help you develop, implement, and administer your benefit,
 retirement, and profit-sharing plans with an eye toward rewarding your employees and reaching your
-company's financial and business goals.
-<a class="learnmore" href=".learnmore">Learn More ></a></p>
+company's financial and business goals.<a class="learnmore" href=".learnmore">Learn More ></a>
+</p>
 <p class="categoryextra">We can also help maximize tax advantages in implementing
 these plans. As your business grows, your business and your employees will be rewarded for the
 hard work that contributed to the success of your business.</p>
-</div>
-</li>
 
-<li>
-<label for="fifth">Small Business Accounting</label>
-<input type="radio" name="accordion" id="fifth">
-<div class="content">
+</section>
+  <section id="tab-5" class="tab-panel">
+<h3 class="categoryheadings">Small Business Accounting</h3>
+<p>
 <h3 class="categoryheadings">Book Keepings/Write-Up</h3>
 <p>Accurate record-keeping is essential to a successful business yet can also be complicated and time
 consuming. William Thomas &amp; Associates can help you with the organization and day-to-day tasks of
-bookkeeping so that you can focus on your core business.
-<a class="learnmore" href=".learnmore">Learn More ></a></p>
+bookkeeping so that you can focus on your core business.<a class="learnmore" href=".learnmore">Learn More ></a>
+</p>
 <h3 class="categoryheadings">Entity Selection and Restructuring</h3>
 <p class="categoryextra">Your business entity has a large impact on your taxes and other liabilities. From your company's
 inception through its growth and development, William Thomas &amp; Associates can advise you on
@@ -200,9 +234,10 @@ procedures that confirm financial statement matters and identify any items requi
 We perform reviews to ensure the integrity of your data. Compilations are usually requested for internal purposes and are based upon information provided
 by a company's management. They do not offer assurance but may involve some adjustment to
 accounting records.</p>
-</div>
-</li>
-</ul>
+
+    </div>
+  </section>
+
 
     </main>
 
