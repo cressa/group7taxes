@@ -89,4 +89,5 @@ h2{
 .button:hover, .button:focus {
   background-color: rgb(41,60,66);
   border: 5px solid rgb(41,60,66);
+  color: rgb(198,168,140);
 }

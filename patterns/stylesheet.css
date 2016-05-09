@@ -153,6 +153,7 @@ p{
     .button:hover, .button:focus {
       background-color: rgb(41,60,66);
       border: 5px solid rgb(41,60,66);
+      color: rgb(198,168,140);
     }
 
 
@@ -162,6 +163,10 @@ p{
     text-decoration: none;
     line-height: 1.5em;
 
+  }
+
+  a:hover {
+    color: rgb(198,168,140);
   }
 
   div.links {
