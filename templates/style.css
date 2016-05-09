@@ -188,7 +188,8 @@ input.formbutton{
   border: 5px solid rgb(57,85,93);
   margin-right: auto;
   margin-left: 0;
-
+  width: 200px;
+  text-align: center;
 }
 
 
