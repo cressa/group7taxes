@@ -21,11 +21,19 @@ img.employees {
 }
 
 .signinbutton {
-  display: none;
+  display: none;}
+
+  .signinbutton:hover, .button:focus {
+  background-color: rgb(41,60,66);
+  border: 5px solid rgb(41,60,66);
 }
 
 .schedulebutton {
-  display: none;
+  display: none;}
+
+  .schedulebutton:hover, .button:focus {
+  background-color: rgb(41,60,66);
+  border: 5px solid rgb(41,60,66);
 }
 
 h1.companyname {
@@ -137,6 +145,51 @@ a:hover {
 form{
   padding-left: .8em;
   padding-bottom: .9em;
+
+}
+.boxsection{
+  font-size: 1.7em;
+  font-family: cambria, serif;
+  font-weight: bold;
+  color: rgb(57,85,93);
+
+}
+
+.fieldtitles{
+  font-size: 1.1em;
+  font-family: cambria, serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: rgb(57,85,93);
+
+}
+.formbutton{
+  padding: 1em;
+  display: block;
+  background-color: rgb(57,85,93);
+  color: white;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+  margin: .5em;
+  text-align: left;
+  font-family: optima, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  max-width: 200px;
+  border: 5px solid rgb(57,85,93);
+  margin-right: auto;
+  margin-left: 0;
+}
+
+
+  .formbutton:hover, .button:focus {
+  background-color: rgb(41,60,66);
+  border: 5px solid rgb(41,60,66);
+}
+fieldset{
+  border-style: none;
 }
 
 main{
@@ -149,7 +202,7 @@ body{
 p {
   font-family: cambria, serif;
   font-size: 1em;
-  max-width: 75%;
+
 }
 
 .mobilebuttons {
@@ -198,7 +251,7 @@ main {
 }
 
 .tab-panel {
-  background: #f0f0f0;
+  background: #fffff;
   padding: 1em;
 
 
@@ -331,7 +384,7 @@ nav[role=navigation] {
             max-height: 0;
             position: absolute;
             width: 100%;
-            top:188px;
+            top:180px;
         }
         nav[role=navigation].active {
             max-height: 30em;
@@ -376,7 +429,8 @@ div.buttons{
         }
 
     .button:hover, .button:focus {
-      background-color: rgb(57,85,93)
+      background-color: rgb(41,60,66);
+      border: 5px solid rgb(41,60,66);
     }
 
       .buttontext {
@@ -562,7 +616,7 @@ div.buttons{
 
 .categoryextra{
   display: block;
-  max-width: 75%%;
+
 }
 .learnmore{
   display: none;
@@ -583,13 +637,66 @@ margin-left: 5.5em;
 }
 .serviceparagraph{
   margin-left: 13.9em;
-  max-width: 60%;
+
+
 }
 
 .base--h2{
   margin-left: 8.2em;
 }
+
+p{
+  max-width: 100%;
+}
+.tab-list {
+  background: rgb(103,39,31);
+  padding: 0;
+  margin-left: -1em;
+  height: 50rem;
+  margin-bottom: -2em;
+  margin-top: -21em;
   }
+  .tab-item[data-tab-active] {
+  background: rgb(84,32,26);
+  -webkit-transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
+  transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
+  margin-top: 16em;
+}
+.profile{
+  padding-bottom: 3em;
+}
+.employeephoto {
+  border: 3px solid rgb(57,85,93);
+  padding-right: 0em;
+  float: left;
+  display: block;
+  margin: 0px auto;
+
+
+}
+.employeename {
+  text-align: left;
+  line-height: 0.7em;
+  margin-top: 2.5em;
+  padding-left: 8em;
+
+
+}
+
+.employeetitle {
+  text-align: left;
+    line-height: 0.3em;
+    padding-left: 12.5em;
+}
+
+.employeenumber {
+  text-align: left;
+  padding-left: 13.7em;
+}
+
+}
+
+
 
   @media screen and (min-width: 900px) {
 
@@ -598,16 +705,23 @@ margin-left: 5.5em;
     }
     .serviceparagraph{
       margin-left: 16.5em;
-      max-width: 100%;
+      max-width: 100%
+
     }
 
     .base--h2{
       margin-left: 9.7em;
     }
     p{
-      max-width: 100%;
+      max-width: 75%;
     }
+    .homeparagraph{
+      margin-left: 5em;
   }
+  .whoweare{
+    margin-left: 2em;
+  }
+}
   @media screen and (min-width: 1000px) {
 
     .ourservices{
@@ -615,11 +729,21 @@ margin-left: 5.5em;
     }
     .serviceparagraph{
       margin-left: 19em;
+      max-width: 50%;
     }
 
     .base--h2{
       margin-left: 11.2em;
     }
+    p{
+      max-width: 75%;
+    }
+    .homeparagraph{
+      margin-left: 10.2em;
+  }
+  .whoweare{
+    margin-left: 4em;
+  }
   }
   @media screen and (min-width: 1200px) {
 
@@ -628,11 +752,21 @@ margin-left: 5.5em;
     }
     .serviceparagraph{
       margin-left: 20.5em;
+    max-width: 50%;
     }
 
     .base--h2{
       margin-left: 12.2em;
     }
+    p{
+      max-width: 75%;
+    }
+    .homeparagraph{
+      margin-left: 11.5em;
+  }
+  .whoweare{
+    margin-left: 4.5em;
+  }
   }
 
   @media screen and (min-width: 1300px) {
@@ -642,10 +776,14 @@ margin-left: 5.5em;
     }
     .serviceparagraph{
       margin-left: 25em;
+      max-width: 50%;
     }
 
     .base--h2{
       margin-left: 14.7em;
+    }
+    p{
+      max-width: 75%;
     }
   }
 
