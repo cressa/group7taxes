@@ -171,7 +171,7 @@ nav form{
 
 }
 input.formbutton{
-  padding: 1em;
+  padding: 1.5em;
   display: block;
   background-color: rgb(57,85,93);
   color: white;
@@ -186,7 +186,8 @@ input.formbutton{
   -webkit-border-radius: 10px;
   -webkit-appearance: inherit;
   max-width: 200px;
-  
+  border: none;
+
   margin-right: auto;
   margin-left: 0;
   width: 200px;
@@ -196,7 +197,7 @@ input.formbutton{
 
 .formbutton:hover, .button:focus {
   background-color: rgb(41,60,66);
-  border: 5px solid rgb(41,60,66);
+
 }
 
 fieldset{
