@@ -145,8 +145,15 @@ a:hover {
 form{
   padding-left: .8em;
   padding-bottom: .9em;
+  padding-top: 1em;
 
 }
+
+nav form{
+  background-color: rgb(103,39,31);
+  z-index: 300;
+}
+
 .boxsection{
   font-size: 1.7em;
   font-family: cambria, serif;
@@ -194,9 +201,10 @@ fieldset{
 }
 
 main{
-  padding-left: 1em;
+  padding-left: .3em;
   margin-left: 1.1em;
   margin-right: 1.1em;
+  min-height: 500px;
 
 
 }
@@ -220,14 +228,20 @@ p {
   font-style: italic;
 }
 
+.profile{
+  margin-top: 3em;
+}
+
+input{
+  vertical-align: middle;
+
+}
+
 
 
 /* accordion style */
 
 
-main {
-  padding: .5rem;
-}
 
 .tab-list {
   background: rgb(103,39,31);
@@ -394,6 +408,7 @@ nav[role=navigation] {
         }
         nav[role=navigation].active {
             max-height: 30em;
+            z-index: 100;
         }
         nav[role=navigation] ul {
             margin: 0;
@@ -406,7 +421,9 @@ nav[role=navigation] {
             padding: 0.8em;
             border-bottom: 1px solid white;
         }
-
+header img{
+  z-index: 200;
+}
 
 
 
@@ -456,6 +473,12 @@ div.buttons{
       .listextra {
         display: none;
       }
+      .fullwidth{
+        max-width: 875px;
+        margin: 0 auto;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+      }
 
 
 
@@ -471,9 +494,11 @@ div.buttons{
         top: 140px;
     }
     nav[role=navigation] ul {
-        margin: 0 0 0 -0.25em;
+        margin: 0 0 0 0;
         border: 0;
         background-color: rgb(146,115,80);
+        width: 75%;
+        float: left;
 
     }
 
@@ -540,9 +565,17 @@ div.buttons{
       margin-right: 3em;
     }
 
-    form {
-      float: right;
-    }
+
+
+nav form{
+  float: right;
+  width: 25%;
+  background-color: rgb(146,115,80);
+  padding-bottom: .5em;
+  padding-right: 1em;
+  margin-top: -0.5em;
+
+}
 
     div.headerbackground {
       background-color: white;
@@ -577,33 +610,34 @@ div.buttons{
     }
     .tab-item {
       display: inline-block;
+      width: 100%;
     }
 
     .tab-link {
       display: inline-block;
       padding: 1rem 4rem;
+      width: 100%;
 
     }
     .tab-list {
       float: left;
       width: 27%;
       max-width: 27%;
-
     }
     .tab-panel{
       float: right;
-      width: 73%;
+      width: 70%;
+      padding:0;
+
 
     }
 
     .tab-link[data-tab-active]:after {
       content: '';
       display: inline-block;
-      margin-left: 14.2em;
       position: absolute;
       bottom: 18px;
-      left: 0;
-      right: 0;
+      right: -15px;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
@@ -611,6 +645,12 @@ div.buttons{
       border-top: 10px solid rgb(84,32,26);
       transform: rotate(-90deg);
 }
+
+.services-content {
+  width: 70%;
+  float: right;
+}
+
 .categoryheadings{
   display: block;
   font-size: 1.1em;
@@ -636,26 +676,14 @@ div.buttons{
 .listextra {
   display: block;
 }
-
-.ourservices{
-margin-left: 5.5em;
-
-}
 .serviceparagraph{
-  margin-left: 13.9em;
   border-bottom: 5px solid rgb(103,39,31);
   border-bottom-width: medium;
 
   height:100px;
-
-
-
-
 }
 
-.base--h2{
-  margin-left: 8.2em;
-}
+
 
 p{
   max-width: 100%;
@@ -663,16 +691,17 @@ p{
 .tab-list {
   background: rgb(103,39,31);
   padding: 0;
-  margin-left: -1em;
-  height: 50rem;
+  margin-left: -2.1em;
+  height: 120rem;
   margin-bottom: -2em;
-  margin-top: -21em;
+  margin-top: -2.7em;
+  padding-top: 20em;
   }
   .tab-item[data-tab-active] {
   background: rgb(84,32,26);
   -webkit-transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
   transition: all 150ms cubic-bezier(0.42, 0, 1, 1);
-  margin-top: 16em;
+
 }
 .profile{
   padding-bottom: 3em;
@@ -683,7 +712,6 @@ p{
   float: left;
   display: block;
   margin: 0px auto;
-
 
 }
 .employeename {
@@ -698,20 +726,30 @@ p{
 
 .employeetitle {
   text-align: left;
-    line-height: 0.3em;
-    padding-left: 12.5em;
+  line-height: 0.3em;
+  padding-left: 12.5em;
 }
 
 .employeenumber {
   text-align: left;
   padding-left: 13.7em;
 }
-fieldset{
-  float:left;
-}
-.contactform{
-float: left;
 
+input{
+  vertical-align: middle;
+}
+
+
+
+
+
+.button{
+  display: inline-block;
+  width: 200px;
+  margin: .75em;
+}
+.tab-link{
+  text-align: center;
 }
 }
 
@@ -719,90 +757,32 @@ float: left;
 
   @media screen and (min-width: 900px) {
 
-    .ourservices{
-    margin-left: 6.5em;
-    }
     .serviceparagraph{
-      margin-left: 16.5em;
       max-width: 100%
 
-    }
-
-    .base--h2{
-      margin-left: 9.7em;
-    }
-    p{
-      max-width: 75%;
-    }
-    .homeparagraph{
-      margin-left: 5em;
-  }
-  .whoweare{
-    margin-left: 2em;
-  }
 }
   @media screen and (min-width: 1000px) {
 
-    .ourservices{
-    margin-left: 7.5em;
-    }
     .serviceparagraph{
-      margin-left: 19em;
-      max-width: 50%;
+      max-width: 70%;
     }
 
-    .base--h2{
-      margin-left: 11.2em;
-    }
-    p{
-      max-width: 75%;
-    }
-    .homeparagraph{
-      margin-left: 10.2em;
-  }
-  .whoweare{
-    margin-left: 4em;
-  }
-  }
-  @media screen and (min-width: 1200px) {
+  .button{
+    display: inline-block;
+    width: 300px;
+    margin: 1em;
 
-    .ourservices{
-    margin-left: 8.2em;
-    }
-    .serviceparagraph{
-      margin-left: 20.5em;
-    max-width: 50%;
-    }
+  }
 
-    .base--h2{
-      margin-left: 12.2em;
-    }
-    p{
-      max-width: 75%;
-    }
-    .homeparagraph{
-      margin-left: 11.5em;
-  }
-  .whoweare{
-    margin-left: 4.5em;
-  }
-  }
+}
+
 
   @media screen and (min-width: 1300px) {
 
-    .ourservices{
-    margin-left: 10em;
-    }
-    .serviceparagraph{
-      margin-left: 25em;
-      max-width: 50%;
-    }
 
-    .base--h2{
-      margin-left: 14.7em;
-    }
+
     p{
-      max-width: 75%;
+      max-width: 100%;
     }
   }
 
