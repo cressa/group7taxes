@@ -1,0 +1,92 @@
+header{
+  padding-top:2em;
+}
+
+img {
+  float: left;
+  width: 200px;
+  padding-right: 1em;
+  padding-left: 0em;
+  margin-top: -1.7em;
+  position: relative;
+}
+
+h1.companyname {
+  font-family:freight micro pro, serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: white;
+  text-align: left;
+  padding-top: .4em;
+  padding-left: 5em;
+  letter-spacing: 0.04em;
+}
+
+h1.associates {
+  font-family: optima, sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(103,39,31);
+  text-align: left;
+  line-height: 1em;
+  padding-bottom: 1em;
+  margin-top: -0.7em;
+}
+
+div.headerbackground {
+  height: 103px;
+  min-width: 100px;
+  margin: 0;
+  margin-top: 2.5em;
+  background-color: rgb(146,115,80);
+}
+
+body {
+  margin: 0px;
+}
+
+/* Project Timeline */
+
+h1{
+  font-size: 2.5em;
+  font-family: optima, sans-serif;
+  text-transform: uppercase;
+  color: rgb(103,39,31);
+  padding-left: .5em;
+}
+
+h2{
+  font-family: optima, sans-serif;
+  text-transform: uppercase;
+  padding-left: 1em;
+  margin-bottom: 0em;
+  font-size: 1.1em;
+  color: rgb(103,39,31);
+}
+
+/*Button Links*/
+.button {
+  padding: 1em;
+  display: block;
+  background-color: rgb(57,85,93);
+  color: white;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+  margin: .5em;
+  text-align: center;
+  font-family: optima, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  max-width: 200px;
+  border: 5px solid rgb(57,85,93);
+  margin-left: 1.5em;
+}
+
+.button:hover, .button:focus {
+  background-color: rgb(41,60,66);
+  border: 5px solid rgb(41,60,66);
+}
