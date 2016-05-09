@@ -23,7 +23,7 @@ img.employees {
 .signinbutton {
   display: none;}
 
-  .signinbutton:hover, .button:focus {
+.signinbutton:hover, .button:focus {
   background-color: rgb(41,60,66);
   border: 5px solid rgb(41,60,66);
 }
@@ -31,7 +31,7 @@ img.employees {
 .schedulebutton {
   display: none;}
 
-  .schedulebutton:hover, .button:focus {
+.schedulebutton:hover, .button:focus {
   background-color: rgb(41,60,66);
   border: 5px solid rgb(41,60,66);
 }
@@ -184,20 +184,25 @@ form{
 }
 
 
-  .formbutton:hover, .button:focus {
+.formbutton:hover, .button:focus {
   background-color: rgb(41,60,66);
   border: 5px solid rgb(41,60,66);
 }
+
 fieldset{
   border-style: none;
 }
 
 main{
   padding-left: 1em;
+  margin-left: 1.1em;
+  margin-right: 1.1em;
+
 
 }
 body{
   margin: 0;
+
 }
 p {
   font-family: cambria, serif;
@@ -300,6 +305,7 @@ footer {
   margin-top: 2em;
   float: left;
   width: 100%;
+  padding-right: 1em;
 }
 
 
