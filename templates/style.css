@@ -170,7 +170,7 @@ nav form{
   color: rgb(57,85,93);
 
 }
-.formbutton{
+input.formbutton{
   padding: 1em;
   display: block;
   background-color: rgb(57,85,93);
@@ -188,6 +188,7 @@ nav form{
   border: 5px solid rgb(57,85,93);
   margin-right: auto;
   margin-left: 0;
+
 }
 
 
